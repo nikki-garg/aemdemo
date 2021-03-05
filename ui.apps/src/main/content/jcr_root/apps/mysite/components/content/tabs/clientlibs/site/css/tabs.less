@@ -1,0 +1,28 @@
+.nikita{
+ border-color: inherit;
+}
+.cmp-tabs__tablist {
+    display: inline-block;
+    flex-wrap: wrap;
+    padding-left: 0;
+    list-style: none;
+}
+
+.cmp-tabs__tab {
+    box-sizing: border-box;
+    border-bottom: 1px solid transparent;
+    padding: .5rem 1rem;
+    cursor: pointer;
+
+    &--active {
+        border-color: inherit;
+    }
+}
+
+.cmp-tabs__tabpanel {
+    display: none;
+
+    &--active {
+        display: inline-flex;
+    }
+}

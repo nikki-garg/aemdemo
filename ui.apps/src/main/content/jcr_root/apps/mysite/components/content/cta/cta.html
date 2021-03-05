@@ -1,0 +1,15 @@
+<sly data-sly-test="${wcmmode.edit}">
+    <div data-emptytext="Click to edit Call to Action component" class="cq-placeholder"></div>
+</sly>
+<section id="cta" class="cta">
+    <div class="container aos-init aos-animate" data-aos="zoom-in">
+
+        <div class="text-center">
+            <image data-sly-test="${properties.bgImage}" class="" src="${properties.bgImage}" data-object-fit="cover"/>
+            <h3 data-sly-test="${properties.heading}">${properties.heading}</h3>
+            <p data-sly-test="${properties.description}"> ${properties.description}</p>
+            <a data-sly-test="${properties.ctalabel}" class="cta-btn" href="${properties.ctaurl}">${properties.ctalabel}</a>
+        </div>
+
+    </div>
+</section>

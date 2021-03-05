@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Tiles"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/container">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+
+                    <tiles
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                        fieldLabel="Tiles">
+                        <field
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/container"
+                                name="./tiles">
+                            <items jcr:primaryType="nt:unstructured">
+                                <iconclass
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                        fieldLabel="iconclass"
+                                        name="./iconclass">
+                                    <items jcr:primaryType="nt:unstructured">
+                                        <file
+                                            jcr:primaryType="nt:unstructured"
+                                            text="file"
+                                            value="bx bx-file"/>
+                                        <dribble
+                                            jcr:primaryType="nt:unstructured"
+                                            text="dribble"
+                                            value="bx bxl-dribbble"/>
+                                        <world
+                                                jcr:primaryType="nt:unstructured"
+                                                text="world"
+                                                value="bx bx-world">
+                                        </world>
+                                        <tachometer
+                                                jcr:primaryType="nt:unstructured"
+                                                text="tachometer"
+                                                value="bx bx-tachometer">
+                                        </tachometer>
+                                    </items>
+                                </iconclass>
+                                <title
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                        fieldLabel="Title"
+                                        name="./title"/>
+                                <description
+                                        jcr:primaryType="nt:unstructured"
+                                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                        fieldLabel="Description"
+                                        name="./description"/>
+                            </items>
+                        </field>
+                    </tiles>
+            </column>
+        </items>
+    </content>
+</jcr:root>
+
