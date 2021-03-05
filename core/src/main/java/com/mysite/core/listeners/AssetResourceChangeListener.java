@@ -14,7 +14,7 @@ import java.util.List;
 @Component(service = ResourceChangeListener.class,
         immediate = true,
         property = {
-            ResourceChangeListener.PATHS+"/content/dam/mysite/resource",
+            ResourceChangeListener.PATHS+"=/content/dam/mysite/resource",
             ResourceChangeListener.CHANGES +"=ADDED",
             ResourceChangeListener.CHANGES +"=CHANGED",
             ResourceChangeListener.CHANGES +"=REMOVED"

@@ -10,57 +10,53 @@
             <column
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/coral/foundation/container">
-
-                    <tiles
+                <tiles
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
+                    fieldLabel="Tiles">
+                    <field
                         jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/form/multifield"
-                        fieldLabel="Tiles">
-                        <field
+                        sling:resourceType="granite/ui/components/coral/foundation/container"
+                        name="./tiles">
+                        <items jcr:primaryType="nt:unstructured">
+                            <iconclass
                                 jcr:primaryType="nt:unstructured"
-                                sling:resourceType="granite/ui/components/coral/foundation/container"
-                                name="./tiles">
-                            <items jcr:primaryType="nt:unstructured">
-                                <iconclass
+                                sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                                fieldLabel="iconclass"
+                                name="./iconclass">
+                                <items jcr:primaryType="nt:unstructured">
+                                    <file
                                         jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
-                                        fieldLabel="iconclass"
-                                        name="./iconclass">
-                                    <items jcr:primaryType="nt:unstructured">
-                                        <file
-                                            jcr:primaryType="nt:unstructured"
-                                            text="file"
-                                            value="bx bx-file"/>
-                                        <dribble
-                                            jcr:primaryType="nt:unstructured"
-                                            text="dribble"
-                                            value="bx bxl-dribbble"/>
-                                        <world
-                                                jcr:primaryType="nt:unstructured"
-                                                text="world"
-                                                value="bx bx-world">
-                                        </world>
-                                        <tachometer
-                                                jcr:primaryType="nt:unstructured"
-                                                text="tachometer"
-                                                value="bx bx-tachometer">
-                                        </tachometer>
-                                    </items>
-                                </iconclass>
-                                <title
+                                        text="file"
+                                        value="bx bx-file"/>
+                                    <dribble
                                         jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                                        fieldLabel="Title"
-                                        name="./title"/>
-                                <description
+                                        text="dribble"
+                                        value="bx bxl-dribbble"/>
+                                    <world
                                         jcr:primaryType="nt:unstructured"
-                                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
-                                        fieldLabel="Description"
-                                        name="./description"/>
-                            </items>
-                        </field>
-                    </tiles>
+                                        text="world"
+                                        value="bx bx-world"/>
+                                    <tachometer
+                                        jcr:primaryType="nt:unstructured"
+                                        text="tachometer"
+                                        value="bx bx-tachometer"/>
+                                </items>
+                            </iconclass>
+                            <title
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                                fieldLabel="Title"
+                                name="./title"/>
+                            <description
+                                jcr:primaryType="nt:unstructured"
+                                sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                                fieldLabel="Description"
+                                name="./description"/>
+                        </items>
+                    </field>
+                </tiles>
             </column>
         </items>
     </content>
 </jcr:root>
-

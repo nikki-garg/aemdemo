@@ -17,29 +17,28 @@
                         fieldLabel="Heading"
                         name="./heading"/>
                     <description
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
-                            fieldLabel="Description"
-                            name="./description"/>
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textarea"
+                        fieldLabel="Description"
+                        name="./description"/>
                     <ctalabel
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
-                            fieldLabel="CTA Label"
-                            name="./ctalabel"/>
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="CTA Label"
+                        name="./ctalabel"/>
                     <ctaurl
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                            fieldLabel="CTA url"
-                            name="./ctaurl"/>
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        fieldLabel="CTA url"
+                        name="./ctaurl"/>
                     <bgimage
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
-                            fieldLabel="Background Image"
-                            rootpath="/content/dam/mysite"
-                            name="./bgimage"/>
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/pathfield"
+                        fieldLabel="Background Image"
+                        name="./bgimage"
+                        rootpath="/content/dam/mysite"/>
                 </items>
             </column>
         </items>
     </content>
 </jcr:root>
-

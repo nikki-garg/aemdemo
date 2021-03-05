@@ -1,0 +1,54 @@
+<!--/* Sightly Comments */-->
+<!-- Html Comments -->
+
+<!--/* Experession Language */-->
+
+<p> 
+     <hr>
+     <b>Variables</b>
+     <hr>
+     Title : ${pageProperties.jcr:title} <br>
+     Title with braces : ${pageProperties['jcr:title']} <br>
+     current page last modified time : ${currentPage.lastModified.time.toString} <br/>
+     <hr>
+     <b>Literals</b>
+     <hr>
+     ${true} <br>
+     ${42} <br>
+     ${'foo'}  ${'it\'s great, she said "yes!"'}<br>
+     <hr>
+     <b>Arrays</b>
+     <hr>
+     <ul data-sly-list="${resource.listChildren}">
+         <li>${item}</li>
+     </ul>
+     <hr>
+     <b>Operators</b>
+     <hr>
+     Logical NOT <p data-sly-test="${!currentPage.hasChild}">current page has no children</p> <br>
+     Logical AND 
+     <div data-sly-test="${pageProperties.jcr:title && pageProperties.jcr:description}">
+         <h1>${pageProperties.jcr:title}</h1>
+         <p>${pageProperties.jcr:description}</p>
+     </div> <br>
+     Logical OR 
+     <div data-sly-test="${pageProperties.jcr:title || pageProperties.jcr:description}">
+         <h1>${pageProperties.jcr:title}</h1>
+         <p>${pageProperties.jcr:description}</p>
+     </div> <br>
+ 
+     <b>URL Manipulation</b>
+     <a href="${properties.buttonLinkTo @ extension = 'html'}">Button Label</a>
+     current page last modified time : ${currentPage.lastModified.time.toString} <br/>
+     <b>Number Formatting</b>
+ 
+     <h2>${ '#.00' @ format=300}</h2>
+     <h2>${ 'dd-MMMM-yyyy hh:mm:ss' @
+         format=currentPage.lastModified,
+         timezone='PST',
+         locale='fr'}</h2>
+     
+     <b>Arrays Join</b>    ${['one', 'two'] @ join='; '}
+     Context :: <div>${properties.richText @ context='html'}</div>
+ 
+ </p>
