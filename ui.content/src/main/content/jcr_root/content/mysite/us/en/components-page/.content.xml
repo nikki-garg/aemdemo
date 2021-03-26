@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2021-03-04T05:05:07.991Z"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/mysite/settings/wcm/templates/content-page-template"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Components Page"
+        sling:resourceType="mysite/components/structure/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <tile
+                    jcr:created="{Date}2021-03-02T09:18:59.971Z"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-03-02T09:59:15.946Z"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mysite/components/content/tile">
+                    <tiles jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            description="description1"
+                            iconclass="bx bxl-dribbble"
+                            title="title1"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            description="desc 2"
+                            iconclass="bx bx-file"
+                            title="title2"/>
+                    </tiles>
+                </tile>
+                <helloworld
+                    jcr:created="{Date}2021-03-02T09:20:28.862Z"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-03-04T05:02:47.460Z"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mysite/components/content/helloworld"
+                    text="Hello Text"/>
+                <cta
+                    jcr:created="{Date}2021-03-02T10:51:12.342Z"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-03-02T10:58:11.531Z"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mysite/components/content/cta"
+                    bgimage="img"
+                    ctalabel="label"
+                    ctaurl="url"
+                    description="description"
+                    heading="heading"/>
+                <tabs
+                    jcr:created="{Date}2021-03-03T16:33:25.768Z"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-03-03T16:33:25.768Z"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mysite/components/content/tabs">
+                    <item_1
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Tab 1"
+                        sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                    <item_2
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Tab 2"
+                        sling:resourceType="wcm/foundation/components/responsivegrid"/>
+                </tabs>
+                <tile_903614754
+                    jcr:created="{Date}2021-03-04T04:47:51.073Z"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-03-04T04:56:48.268Z"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mysite/components/content/tile">
+                    <tiles jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            description="descp1"
+                            iconclass="bx bx-tachometer"
+                            title="Tile1"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            description="description2"
+                            iconclass="bx bx-file"
+                            title="tile2"/>
+                    </tiles>
+                </tile_903614754>
+                <text
+                    jcr:created="{Date}2021-03-04T05:04:52.764Z"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-03-04T05:05:07.986Z"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mysite/components/content/text"
+                    text="&lt;p>Title&lt;/p>&#xa;"
+                    textIsRich="true"/>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>

@@ -1,6 +1,28 @@
-<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+<!--/* <sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"
      data-sly-call="${template.placeholder @ isEmpty=!properties.text}"></sly>
 
 <sly data-sly-test="${properties.title}">Title : ${properties.title}  <br/></sly>
 <div data-sly-test="${properties.link}">Link : ${properties.link}</div>
 ${properties.text @context="html"}
+<br>
+text : ${properties.text}
+
+<hr> */-->
+Use class : 
+<sly data-sly-use.demo="com.mysite.core.wcmuse.DemoUseClass">
+Title : ${demo.title} <br>
+Depth : ${demo.depth} <br>
+Description : ${demo.description} <br>
+
+Redirect Url : ${demo.redirectTarget} <br>
+
+Disabled = ${demo.disabled} <br>
+
+Preview = ${demo.preview}
+<br>
+
+path = ${demo.path}
+
+</sly>
+
+

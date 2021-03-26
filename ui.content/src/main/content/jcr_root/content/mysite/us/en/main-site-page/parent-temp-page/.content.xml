@@ -2,8 +2,11 @@
 <jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0"
     jcr:primaryType="cq:Page">
     <jcr:content
-        cq:lastModified="{Date}2021-02-25T17:47:58.526Z"
+        cq:contextHubPath="/etc/cloudsettings/default/contexthub"
+        cq:contextHubSegmentsPath="/etc/segmentation/contexthub"
+        cq:lastModified="{Date}2021-03-18T03:21:14.641Z"
         cq:lastModifiedBy="admin"
+        cq:tags="[mysite:clothing/shirts]"
         cq:template="/apps/mysite/templates/parentTemp"
         jcr:primaryType="cq:PageContent"
         jcr:title="parent temp page"

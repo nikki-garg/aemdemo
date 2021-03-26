@@ -19,4 +19,8 @@
                 sling:resourceType="wcm/foundation/components/responsivegrid"/>
         </root>
     </jcr:content>
+    <main-site-page/>
+    <components-page/>
+    <demo-page/>
+    <testing-temp/>
 </jcr:root>

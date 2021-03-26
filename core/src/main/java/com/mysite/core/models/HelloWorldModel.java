@@ -18,32 +18,34 @@ package com.mysite.core.models;
 import static org.apache.sling.api.resource.ResourceResolver.PROPERTY_RESOURCE_TYPE;
 
 import javax.annotation.PostConstruct;
+import javax.inject.Inject;
 
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
 import org.apache.sling.models.annotations.Default;
 import org.apache.sling.models.annotations.Model;
-import org.apache.sling.models.annotations.injectorspecific.InjectionStrategy;
-import org.apache.sling.models.annotations.injectorspecific.OSGiService;
-import org.apache.sling.models.annotations.injectorspecific.SlingObject;
-import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
+import org.apache.sling.models.annotations.injectorspecific.*;
 import org.apache.sling.settings.SlingSettingsService;
 
 import com.day.cq.wcm.api.Page;
 import com.day.cq.wcm.api.PageManager;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.Optional;
 
 @Model(adaptables = Resource.class)
 public class HelloWorldModel {
 
+    private Logger logger = LoggerFactory.getLogger(HelloWorldModel.class);
+
     @ValueMapValue(name=PROPERTY_RESOURCE_TYPE, injectionStrategy=InjectionStrategy.OPTIONAL)
     @Default(values="No resourceType")
     protected String resourceType;
 
-    @OSGiService
+    @Inject
     private SlingSettingsService settings;
-    @SlingObject
+    @Self
     private Resource currentResource;
     @SlingObject
     private ResourceResolver resourceResolver;
@@ -52,6 +54,7 @@ public class HelloWorldModel {
 
     @PostConstruct
     protected void init() {
+        logger.debug("hellooo world init");
         PageManager pageManager = resourceResolver.adaptTo(PageManager.class);
         String currentPagePath = Optional.ofNullable(pageManager)
                 .map(pm -> pm.getContainingPage(currentResource))

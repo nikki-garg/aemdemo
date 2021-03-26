@@ -1,0 +1,12 @@
+<sly data-sly-use.model="com.mysite.core.models.TagModel" >
+
+Heading : ${model.heading} <br>
+Tag Page List : <br>
+
+<ul data-sly-list="${model.tagOnPages}" >
+
+  <li>${item}</li>
+
+</ul>
+
+</sly>

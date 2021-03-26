@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2021-03-23T14:25:55.865Z"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/mysite/settings/wcm/templates/content-page-template"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Training 2"
+        sling:resourceType="mysite/components/structure/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <comp1
+                    jcr:created="{Date}2021-03-18T06:27:30.432Z"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-03-18T06:41:46.188Z"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mysite/components/content/comp1"
+                    count="78"
+                    description="description"
+                    heading="heading"
+                    linkUrl="/content/mysite/us/en/demo-page"/>
+                <comp2
+                    jcr:created="{Date}2021-03-19T05:36:46.064Z"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-03-23T03:28:27.321Z"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mysite/components/content/comp2"
+                    heading="heading"
+                    tag="[mysite:clothing]"/>
+                <comp3
+                    jcr:created="{Date}2021-03-19T05:50:08.845Z"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-03-19T05:55:45.925Z"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mysite/components/content/comp3"
+                    description="dexcription 2"
+                    heading="heading"
+                    title="title">
+                    <links jcr:primaryType="nt:unstructured">
+                        <item0
+                            jcr:primaryType="nt:unstructured"
+                            description="descp1"
+                            heading="heading 1"/>
+                        <item1
+                            jcr:primaryType="nt:unstructured"
+                            description="description"
+                            heading="heading 2"/>
+                    </links>
+                </comp3>
+                <comp4
+                    jcr:created="{Date}2021-03-23T14:25:55.856Z"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-03-23T14:25:55.856Z"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mysite/components/content/comp4"/>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>

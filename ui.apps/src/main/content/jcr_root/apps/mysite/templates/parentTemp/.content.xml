@@ -5,6 +5,7 @@
     jcr:title="Parent temp"
     allowedChildren="[/apps/mysite/templates/child1]"
     allowedParents="[/apps/mysite/templates/page-content]"
+    allowedPaths="[/content/mysite/.+]"
     ranking="{Long}1">
     <jcr:content
         jcr:primaryType="cq:PageContent"

@@ -9,10 +9,12 @@
                 <responsivegrid jcr:primaryType="nt:unstructured">
                     <content-default
                         jcr:description="Policy for editable layout containers"
+                        jcr:lastModified="{Date}2021-03-18T06:27:02.257Z"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="mysite Default"
                         sling:resourceType="wcm/core/components/policy/policy"
-                        components="[group:mysite.Content,/apps/mysite/components/form/container,group:mysite.Structure]"
+                        components="[group:mysite.Content,/apps/mysite/components/form/container,group:mysite.Structure,group:mysite.Training]"
                         policyResourceType="wcm/foundation/components/responsivegrid">
                         <cq:authoring jcr:primaryType="nt:unstructured">
                             <assetToComponentMapping jcr:primaryType="nt:unstructured">
@@ -58,6 +60,24 @@
                             </assetToComponentMapping>
                         </cq:authoring>
                     </policy_xfm>
+                    <policy_16547280224200
+                        jcr:lastModified="{Date}2021-03-05T15:17:37.744Z"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="ComponentsPolicy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/apps/mysite/components/content/cta,/apps/mysite/components/content/demo,/apps/mysite/components/content/htl,/apps/mysite/components/content/image,/apps/mysite/components/content/tabs,/apps/mysite/components/content/tile]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_16547280224200>
+                    <policy_1615007063910
+                        jcr:lastModified="{Date}2021-03-06T05:05:08.098Z"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="Demo Policy"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/apps/mysite/components/content/accordion,/apps/mysite/components/content/breadcrumb]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1615007063910>
                 </responsivegrid>
             </components>
         </foundation>
@@ -281,8 +301,19 @@
                         jcr:title="mysite Experience Fragment - Footer"
                         sling:resourceType="wcm/core/components/policy/policy">
                         <jcr:content jcr:primaryType="nt:unstructured"/>
-                </policy_footer>
+                    </policy_footer>
                 </experiencefragment>
+                <container jcr:primaryType="nt:unstructured">
+                    <policy_1614958182350
+                        jcr:lastModified="{Date}2021-03-05T15:30:33.448Z"
+                        jcr:lastModifiedBy="admin"
+                        jcr:primaryType="nt:unstructured"
+                        jcr:title="ImageText"
+                        sling:resourceType="wcm/core/components/policy/policy"
+                        components="[/apps/mysite/components/content/image,/apps/mysite/components/content/text]">
+                        <jcr:content jcr:primaryType="nt:unstructured"/>
+                    </policy_1614958182350>
+                </container>
             </content>
             <structure jcr:primaryType="nt:unstructured">
                 <page jcr:primaryType="nt:unstructured">
@@ -295,6 +326,8 @@
                         <jcr:content jcr:primaryType="nt:unstructured"/>
                     </policy_xfm>
                     <policy_content_page
+                        jcr:lastModified="{Date}2021-03-05T15:03:20.451Z"
+                        jcr:lastModifiedBy="admin"
                         jcr:primaryType="nt:unstructured"
                         jcr:title="mysite Page Policy"
                         sling:resourceType="wcm/core/components/policy/policy"

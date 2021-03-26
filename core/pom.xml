@@ -45,7 +45,7 @@
                             <bnd><![CDATA[
 Bundle-Category: mysite
 Import-Package: javax.annotation;version=0.0.0,*
--exportcontents: ${packages;VERSIONED}
+-exportcontents: ${packages}
 Sling-Model-Packages: com.mysite.core.models
 -snapshot: ${tstamp;yyyyMMddHHmmssSSS}
 Bundle-DocURL:
@@ -188,5 +188,12 @@ Bundle-DocURL:
             <groupId>uk.org.lidalia</groupId>
             <artifactId>slf4j-test</artifactId>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple -->
+        <dependency>
+            <groupId>com.googlecode.json-simple</groupId>
+            <artifactId>json-simple</artifactId>
+
+        </dependency>
+
     </dependencies>
 </project>

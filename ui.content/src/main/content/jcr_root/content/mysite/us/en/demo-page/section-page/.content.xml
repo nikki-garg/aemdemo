@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="cq:Page">
+    <jcr:content
+        cq:lastModified="{Date}2021-03-13T06:28:23.929Z"
+        cq:lastModifiedBy="admin"
+        cq:template="/conf/mysite/settings/wcm/templates/2-column-layout"
+        jcr:primaryType="cq:PageContent"
+        jcr:title="Section Page"
+        sling:resourceType="mysite/components/structure/page">
+        <root
+            jcr:primaryType="nt:unstructured"
+            sling:resourceType="wcm/foundation/components/responsivegrid">
+            <responsivegrid
+                jcr:lastModified="{Date}2021-03-05T15:27:47.778Z"
+                jcr:lastModifiedBy="admin"
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="wcm/foundation/components/responsivegrid">
+                <demo2
+                    jcr:created="{Date}2021-03-13T06:28:23.926Z"
+                    jcr:createdBy="admin"
+                    jcr:lastModified="{Date}2021-03-13T06:28:23.926Z"
+                    jcr:lastModifiedBy="admin"
+                    jcr:primaryType="nt:unstructured"
+                    sling:resourceType="mysite/components/content/demo2"/>
+            </responsivegrid>
+        </root>
+    </jcr:content>
+</jcr:root>
