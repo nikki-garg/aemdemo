@@ -11,6 +11,15 @@
                 jcr:primaryType="nt:unstructured"
                 sling:resourceType="granite/ui/components/coral/foundation/container">
                 <items jcr:primaryType="nt:unstructured">
+                    <staticList
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
+                        fieldLabel="Static List"
+                        name="./static">
+                        <datasource
+                            jcr:primaryType="nt:unstructured"
+                            sling:resourceType="mysite/components/datasources/test.json"/>
+                    </staticList>
                     <target
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/select"
@@ -54,24 +63,15 @@
                     <countryList
                         jcr:primaryType="nt:unstructured"
                         sling:resourceType="granite/ui/components/coral/foundation/form/select"
-                        fieldDescription="Choose Equipment"
-                        fieldLabel="Pages"
-                        name="./pages">
+                        fieldDescription="Choose Country"
+                        fieldLabel="Country"
+                        name="./country">
                         <datasource
                             jcr:primaryType="nt:unstructured"
-                            sling:resourceType="/apps/dropdownList"
+                            sling:resourceType="/apps/mysite/dropdownList"
                             rootPath="/content/we-retail/us/en/products/equipment"
-                            selectors="pageListing"/>
+                            selectors="countryList"/>
                     </countryList>
-                    <staticList
-                        jcr:primaryType="nt:unstructured"
-                        sling:resourceType="granite/ui/components/coral/foundation/form/select"
-                        fieldLabel="Static List"
-                        name="./static">
-                        <datasource
-                            jcr:primaryType="nt:unstructured"
-                            sling:resourceType="mysite/components/datasources/test.json"/>
-                    </staticList>
                 </items>
             </columns>
         </items>
