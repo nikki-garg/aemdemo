@@ -5,17 +5,16 @@ import com.day.cq.tagging.TagManager;
 import com.day.cq.wcm.api.Page;
 import org.apache.sling.api.resource.Resource;
 import org.apache.sling.api.resource.ResourceResolver;
+import org.apache.sling.models.annotations.DefaultInjectionStrategy;
 import org.apache.sling.models.annotations.Model;
 import org.apache.sling.models.annotations.injectorspecific.SlingObject;
 import org.apache.sling.models.annotations.injectorspecific.ValueMapValue;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.List;
+import java.util.*;
 
-@Model(adaptables = Resource.class)
+@Model(adaptables = Resource.class,defaultInjectionStrategy = DefaultInjectionStrategy.OPTIONAL)
 public class TagModel {
 
     private Logger logger = LoggerFactory.getLogger(TagModel.class);
@@ -66,5 +65,10 @@ public class TagModel {
 
     public String[] getTags() {
         return tags;
+    }
+
+    public Date getCurrentTimeZone(){
+        Date date = Calendar.getInstance().getTime();
+        return  date;
     }
 }
